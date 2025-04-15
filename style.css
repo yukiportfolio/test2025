@@ -1,0 +1,164 @@
+@charset "utf-8";
+*, ::before, ::after {
+    padding: 0px;
+    margin: 0px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+img {
+    vertical-align: top;
+}
+body {
+  line-height: 1.8;
+  position: relative;
+  top: -50px;
+}
+header {
+
+}
+
+.nav {
+ 
+    width: 600px;
+    justify-content: space-between;
+    display: flex;
+    margin: 0 50px 0 auto;
+}
+
+header .nav img {
+  text-align: right;
+  position: relative;
+  top: 100px;
+}
+
+.mv-catch {
+  position: absolute;
+  padding: 0px 20px;
+  width: 100%;
+  left: 0px;
+  text-align: center;
+  height: auto;
+  top: 300px;
+}
+
+
+.mv-image img {
+  width: 100%;
+  height: auto;
+}
+.sec1 {
+  background-color: #E9F4F8;
+  margin-top: 80px;
+  text-align: center;
+}
+
+
+
+.sec1 .inner  {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.sec1  h2  {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.sec1 .inner .box {
+  width: 360px;
+  position: relative;
+  text-align: center;
+}
+.sec1 .box img {
+  width: 70%;
+  height: auto;
+}
+
+.sec2 {
+  margin-top: 80px;
+  background-color: #E9F4F8;
+}
+.sec2 h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.sec2 .inner {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-left: 150px;
+}
+.text　 img {
+  width: 30%;
+
+
+}
+.sec2 .box {
+  max-width: 600px;
+}
+.inner .box img {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+
+
+
+.sec2 img  {
+  height: auto;
+
+
+
+
+  width: 30%;
+  width: 50%;
+
+}
+.sec3 {
+  text-align: center;
+  margin-top: 80px;
+  background-color: #E9F4F8;
+}
+.sec3 .inner {
+  display: flex;
+  justify-content: space-around;
+}
+
+
+
+.gotop {
+  position: fixed;
+  bottom: 0px;
+  right: 20px;
+}
+
+footer {
+  text-align: center;
+  background-color: #E9F4F8;
+  margin-top: 50px;
+}
+.sec3 .box  img {
+  max-width: 50px;
+  max-height: 50px;
+
+}
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top:100px;
+}
+.sec2 {
+  text-align: center;
+}
+.sec2 table   {
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid rgba(0,0,0,1.00);
+}
+.sec2 table th , td{
+  border: 1px solid #000;
+  text-align: center;
+}
