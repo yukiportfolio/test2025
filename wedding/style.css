@@ -1,0 +1,281 @@
+@charset "utf-8";
+
+*, ::before, ::after {
+    padding: 0px;
+    margin: 0px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior:smooth;
+  scroll-padding-top:66px;  
+}
+img {
+  vertical-align: bottom;
+  max-width: 100%;
+  height: auto;
+}
+body {
+  background-color: #FAE6FA;
+  /* [disabled]font-family: 小塚ゴシック Pr6N; */
+  font-size: 1.7rem;
+  line-height: 1.5;
+  width: auto;
+}
+.container {
+  margin: 0 auto;
+  padding: 0;
+  width: 400px;
+  text-align: center;
+}
+header h1 {
+  height: auto;
+  max-width: 30%;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  min-width: 40%;
+}
+header     {
+  height: 100%;
+  margin: 0;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: calc((100% - 500px) / 2);
+  max-width: none;
+  z-index: 1;
+
+}
+.top  {
+    width: calc((100% - 500px) / 2);
+    height: 100%;
+    max-width: none;
+    position: fixed;
+    top: 0px;
+    margin: 0;
+    left: 0px;
+    opacity: 0.7;
+}
+.top p     ,.top img,.slick-list,.slick-track{
+  height: 100%;
+}
+
+.menu {
+  height: auto;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  top: 50px;
+  right: 50px;
+  left: 50px;
+}
+.logo {
+    opacity: 0.7;
+    width: 50%;
+}
+
+.menu nav {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  z-index: 1;
+  width: calc((100% - 500px) / 2);
+  height: 100vh;
+}
+
+
+nav ul  {
+  height: auto;
+  max-width: 100%;
+  display: inline-block;
+  list-style-type: none;
+  position: absolute;
+  top: 50px;
+  left: 20px;
+  right: 20px;
+  text-align: center;
+}
+nav ul img:hover  {
+    background-color: #EFE6EF;
+    background-size: contain;
+
+
+}
+
+.navimage img {
+  width: calc((100% - 500px) / 2);
+  height: 100%;
+  position: fixed;
+  margin: 0;
+  padding: 0;
+  right: 0px;
+  top: 0px;
+  opacity: 0.7;
+}
+
+
+
+nav a {
+  height: auto;
+  max-width: 100%;
+  display: block;
+  text-decoration: none;
+  z-index: 1;
+}
+.mainimage {
+  margin-bottom: 5rem;
+}
+
+section {
+  position: relative;
+  z-index: 0;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  padding-bottom: 0;
+  margin-bottom: 2rem;
+}
+section h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+
+}
+.about img {
+  margin-top: -20px;
+}
+.clothes {
+  margin-bottom: 50px;
+}
+
+.photographer .boxarea   {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.photographer .box h3 img  {
+    /* [disabled]width: 100%; */
+
+
+
+}
+
+  .photogallery .boxarea   {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+.bana {
+  width: 100%;
+  height: auto;
+  margin-bottom: 30px;
+}
+.access h3  {
+  margin-bottom: 10px;
+  margin-top: 10px;
+
+
+}
+.access img {
+  left: auto;
+
+}
+
+
+footer {
+  background-color: #F6AFE2;
+}
+
+@media (max-width:1000px){
+.nav-button {
+  width: 40px;
+  border: 2px solid #F5F579;
+  border-radius: 50%;
+  height: 40px;
+  margin-left: auto;
+  position: fixed;
+  right: calc((100% - 400px) / 2);
+}
+header h1 {
+  display: none;
+}
+
+.nav-button span {
+  width: 20px;
+  height: 2px;
+  background-color: #F5F579;
+  position: absolute;
+  left: 8px;
+}
+.nav-button span:nth-child(1) {
+  top: 9px;
+}
+.nav-button span:nth-child(2) {
+  top: 17px;
+}
+.nav-button span:nth-child(3)  {
+  top: 25px;
+}
+.menu nav ul {
+  display: block;
+  margin: 0 auto;
+  padding: 5rem 0;
+  max-width: 400px;
+  text-align: center;
+  overflow: auto;
+  font-size: 24px;
+}
+.menu nav {
+  width: 100%;
+  z-index: 1;
+  opacity: 0;
+  visibility: hidden;
+  transition: 1s;
+  background-color: #F1E6EE;
+}
+.open .menu  nav  {
+  opacity: 1;
+  visibility: visible;
+}
+.open nav-button span:nth-child(1) {
+  top: 17px;
+  transform: rotate(315deg);
+}
+
+.open nav-button span:nth-child(2) {
+  width: 0;
+  left: 50%;
+}
+.open nav-button span:nth-child(3) {
+  top: 17px;
+  transform: rotate(-315deg);
+}
+
+
+
+
+
+
+
+
+
+
+}
+
+@media (max-width:800px){
+.navimage img {
+  display: none;
+}
+.top img {
+  display: none;
+}
+
+
+}
