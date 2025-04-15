@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>予約・お問い合わせ</title>
+<style type="text/css">
+.formtable {
+  margin: 0 auto;
+  width: 800ｐｘ;
+  color: 000;
+  background-color: #fff;
+  height: auto;
+}
+p  ,h1{
+  text-align: center;
+}
+.formtable th, .formtable td {
+  border: 1px solid #000000;
+  padding: 10px;
+}
+.formtable th {
+  background-color: #CDCFE4;
+}
+.formtable textarea {
+  resize: vertical;
+}
+</style>
+</head>
+
+<body>
+  <h1>予約・お問い合わせ</h1>
+  <form>
+  <table width="800" class="formtable">
+    <tbody>
+        <tr>
+            <th width="446" scope="row">お名前</th>
+            <td width="338"><input name="textfield" type="text" id="textfield" placeholder="田中　花子"></td>
+        </tr>
+        <tr>
+            <th scope="row">お名前（カナ）</th>
+            <td><input name="textfield2" type="text" id="textfield2" placeholder="タナカ　ハナコ"></td>
+        </tr>
+        <tr>
+            <th scope="row">メールアドレス</th>
+            <td><input type="text" name="textfield3" id="textfield3"></td>
+        </tr>
+        <tr>
+            <th scope="row">お電話番号<br>
+                ※携帯番号など日中に連絡可能な電話番号をご記入ください。</th>
+            <td><input name="textfield4" type="text" id="textfield4"></td>
+        </tr>
+        <tr>
+            <th scope="row">ご希望プラン</th>
+            <td><label>
+                <input type="checkbox" name="ご希望プラン" value="U" id="ご希望プラン_0">
+                通常プラン</label>
+                <br>
+                <label>
+                    <input type="checkbox" name="ご希望プラン" value="H" id="ご希望プラン_1">
+                    ウェディングプラン</label>                <br>            </td>
+        </tr>
+        <tr>
+            <th scope="row">ご希望日</th>
+            <td><input type="date" name="date" id="date"></td>
+        </tr>
+        <tr>
+            <th scope="row"><p>ご希望時間帯<br>
+                ※時期によって多少前後する可能性があります                <br>
+                ※海辺プランはサンセットまでになります<br>
+                ※ウエディング希望の方は続けて二枠お取りください<br>
+            </p></th>
+            <td><label>
+                <input type="checkbox" name="ご希望時間帯" value="13" id="ご希望時間帯_0">
+                13：00～15：00</label>
+                <br>
+                <label>
+                    <input type="checkbox" name="ご希望時間帯" value="15" id="ご希望時間帯_1">
+                    15：00～17:00</label>
+                <br>
+                <label>
+                    <input type="checkbox" name="ご希望時間帯" value="17" id="ご希望時間帯_2">
+                    17:00～19:00</label>
+                <br>
+                <label>
+                    <input type="checkbox" name="ご希望時間帯" value="19" id="ご希望時間帯_3">
+                    19:00～21:00</label>                <br>            </td>
+        </tr>
+        <tr>
+            <th scope="row">お問い合わせ・相談内容</th>
+            <td><textarea name="textarea" cols="45" rows="10" id="textarea"></textarea></td>
+        </tr>
+    </tbody>
+</table>
+  <p>
+      <input type="submit" name="submit" id="submit" value="送信">
+      <input type="reset" name="reset" id="reset" value="リセット">
+  </p>
+</form>
+</body>
+</html>
