@@ -1,0 +1,141 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ペットショップTERA　職業訓練校</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+<link href="css/slick.css" rel="stylesheet" type="text/css">
+<link href="css/slick-theme.css" rel="stylesheet" type="text/css">
+<link href="css/ajax-loader.gif.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<header>
+    <h1><a href="index.html"><img src="img/logo.png" width="171" height="153" alt="ペットショップ　ロゴ"/></a></h1>
+<div class="nav-button">
+  <span></span>
+  <span></span>
+  <span></span>
+  </div>   
+<nav>
+        <ul class="menu">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="#shop">ペットショップ・テラの想い</a></li>
+            <li><a href="#news">NEWS</a></li>
+            <li><a href="#ranking">当店人気ランキング</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <div class="mv">
+        <div class="slide">
+            <p><img src="img/main1.png" width="1280" height="700" alt="メイン画像"/></p>
+            <p><img src="img/main2.png" width="1280" height="700" alt=""/></p>
+        <p><img src="img/main3.png" width="1280" height="700" alt=""/></p>
+      </div>
+      
+          <p class="mv-catch"><img src="img/serihu.png" width="939" height="105" alt=""/></p>
+    
+  </div>
+    <div>
+     
+            <section class="omoi">
+                <h2 id="shop">ペットショップ・テラの想い</h2>
+                <div class="box">
+        <p>ペットショップ・テラでは、動物病院やペットホテル、トリミングなど動物を家族に迎えた後も飼い主様が<br>
+         止むを得ず手放さないといけない状態をつくらないように飼い主様をしっかりサポートをしていきます。<br>
+         なので、初めての方でも安心して、動物を飼うことができます。一緒に動物も飼い主様を全力でサポートしたいと思います。                </p>
+                </div>
+        </section>
+        <h2 id="news">NEWS </h2>
+        <section class="news">
+    <dl>
+        <dt>9/17</dt>
+        <dd>10月のしつけ教室の予約が始まりました！</dd>
+        <dt>9/18</dt>
+        <dd>秋の4連休ふれあいコーナーのお知らせ</dd>
+        <dt>9/23</dt>
+        <dd>子犬が産まれました♪</dd>
+    </dl>
+    <p><img src="img/koneko.jpg" width="300" height="300" alt=""/></p>
+            </section>
+        <section class="rankingu">
+            <h2 id="ranking">当店人気ランキング</h2>
+            <p>&nbsp;</p>
+            <div class="rankinguarea">
+<div class="rankingubox">
+                    <figure><img src="img/dezain-assets/inu.png" width="302" height="302" alt=""/></figure>
+                    <h3>１位　　トイプードル</h3>
+                        飼い主との絆を深め、
+                    日々の生活に<br>
+                    喜びをもたらしてくれます。<br>
+                    一緒に運動して運動不足も解消♬
+                </div>
+                
+                <div class="rankingubox">
+                   <figure><img src="img/dezain-assets/neko.png" width="302" height="302" alt=""/></figure>
+                     <h3>１位　スコッティッシュ・フォールド </h3>
+                    <p>猫とのふれあいは、ストレスを軽減し、<br>
+                        リラックス効果をもたらします。<br>
+                    </p>
+                    <p>猫ちゃんはお留守番も得意です♬</p>
+                </div>
+               
+              <div class="rankingubox">
+                    <figure><img src="img/dezain-assets/hamusuta.png" width="302" height="302" alt=""/></figure>
+                    <h3>１位　ジャンガリアンハムスター</h3>
+                    <p>その愛らしい姿と独特の行動で、<br>
+                    楽しさと癒しをもたらしてくれます♬</p>
+                </div>
+                <div class="rankingubox">
+                    <figure><img src="img/dezain-assets/tori.png" width="303" height="303" alt=""/></figure>
+                    <h3>１位　セキセイインコ</h3>
+                    <p>セキセイインコは知能が高く、<br>
+                    さまざまなトリックや言葉を<br>
+                    学ぶことができます。<br>
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+</main>
+<footer>
+    <ul class="menu">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="#shop">ペットショップ・テラの想い</a></li>
+            <li><a href="#news">NEWS</a></li>
+            <li><a href="#ranking">当店人気ランキング</a></li>
+        </ul>
+    <div class="copyright">Ⓒ petshop-tera </div>
+</footer>
+<script type="text/javascript" src="js/jquery-3.7.1.min.js"></script>
+<script type="text/javascript" src="js/slick.min.js"></script>
+
+  <script>
+      $(function(){
+     //メインタグカルーセル
+     $(".slide").slick({
+      autoplay: true,
+      autoplaySpeed: 10,
+       speed: 10000,
+       dots: true,
+       arrows: false,
+	   cssEase:"linear",
+     });
+  });
+    
+        	  $(function(){
+  $(".nav-button").on("click", function(){
+	    
+    $("body").toggleClass("menu-open");
+  });
+	$(document).on("click","menu-open nav", function(){
+		$("nav-button").trigger("click");
+	})	  
+  });
+    
+    
+    </script>
+</body>
+</html>
